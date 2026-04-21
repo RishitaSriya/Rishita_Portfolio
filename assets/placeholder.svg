@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0f0f1a"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#7c5cfc" stroke-width="2" stroke-dasharray="10,6" rx="8"/>
+  <text x="400" y="200" fill="#4a4870" font-family="sans-serif" font-size="18" text-anchor="middle">Replace with your video/image</text>
+  <text x="400" y="230" fill="#4a4870" font-family="sans-serif" font-size="13" text-anchor="middle">Add file to /videos or /thumbnails folder</text>
+  <text x="400" y="258" fill="#7c5cfc" font-family="sans-serif" font-size="12" text-anchor="middle">Then update src="" in index.html</text>
+  <circle cx="400" cy="310" r="28" fill="none" stroke="#7c5cfc" stroke-width="2"/>
+  <polygon points="393,300 393,320 415,310" fill="#7c5cfc"/>
+</svg>

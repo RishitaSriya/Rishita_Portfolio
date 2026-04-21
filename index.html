@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    UPDATE: Change this title to your name/brand
+  ============================================================ -->
+  <title>Rishita Sriya — Video Editor & Motion Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+    STICKY NAVIGATION BAR
+    UPDATE: Change nav links if you rename sections
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- UPDATE: Your name/logo here -->
+      <a href="#hero" class="nav-logo">Rishita<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+    SECTION 1: HERO
+    UPDATE: Name, tagline, subline below
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="noise-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Available for freelance work</p>
+      <!-- UPDATE: Your name -->
+      <h1 class="hero-name reveal">Rishita<br /><em>Sriya</em></h1>
+      <!-- UPDATE: Your tagline -->
+      <p class="hero-tagline reveal">Video Editor&nbsp;&nbsp;•&nbsp;&nbsp;Motion Graphics&nbsp;&nbsp;•&nbsp;&nbsp;Thumbnail Designer</p>
+      <!-- UPDATE: Your short pitch line -->
+      <p class="hero-sub reveal">I create engaging, scroll-stopping content.</p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECTION 2: FEATURED WORK
+    Three categories: Creative Edits · Motion & Animation · Thumbnail Designs
+  ============================================================ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">Crafted with<br /><em>intention</em></h2>
+      </div>
+
+      <!-- ============================================================
+        CATEGORY TABS
+        UPDATE: If you rename a tab, also rename the matching
+        data-tab="" value AND the id="tab-XXXX" panel below.
+      ============================================================ -->
+      <div class="tabs reveal">
+        <button class="tab active" data-tab="creative">
+          <span class="tab-icon">✦</span> Creative Edits
+        </button>
+        <button class="tab" data-tab="motion">
+          <span class="tab-icon">◈</span> Motion &amp; Animation
+        </button>
+        <button class="tab" data-tab="thumb">
+          <span class="tab-icon">▣</span> Thumbnail Designs
+        </button>
+      </div>
+
+
+      <!-- ===========================================================
+        TAB 1: CREATIVE EDITS
+        What goes here: Any edited video — cinematic cuts, brand films,
+        documentary-style, viral/social edits, music videos, etc.
+
+        HOW TO ADD A NEW CARD:
+        1. Put your .mp4 in /videos  (e.g. videos/edit-01.mp4)
+        2. Put a poster image in /thumbnails  (e.g. thumbnails/edit-01.jpg)
+        3. Copy any card block below, paste at the end of the grid
+        4. Update: src, poster, card-title, card-desc, card-tag, card-style-tag
+      =========================================================== -->
+      <div class="tab-content active" id="tab-creative">
+
+        <!-- ── FEATURED (wide) card — great for your best piece ── -->
+        <div class="creative-grid">
+
+          <!-- CREATIVE CARD 1 — FEATURED (spans 2 columns on desktop) -->
+          <!-- UPDATE: Replace src and poster with your video paths -->
+          <div class="card card-featured reveal">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/creative-01.mp4"
+                poster="thumbnails/creative-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <!-- Floating style label — shown on the video itself -->
+              <span class="card-float-tag">Cinematic</span>
+            </div>
+            <div class="card-body">
+              <!-- UPDATE: Project title -->
+              <h3 class="card-title">Cinematic Brand Film</h3>
+              <!-- UPDATE: 1-2 line description -->
+              <p class="card-desc">Story-driven brand film — moody colour grade, seamless b-roll, and a score that hits.</p>
+              <div class="card-meta">
+                <span class="card-tag">Brand Film</span>
+                <span class="card-tool">Premiere Pro</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CREATIVE CARD 2 -->
+          <!-- UPDATE: Replace src, poster, title, desc, tags -->
+          <div class="card reveal">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/creative-02.mp4"
+                poster="thumbnails/creative-02.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="card-float-tag">Documentary</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Documentary-Style Edit</h3>
+              <p class="card-desc">Interview-based edit with parallel cuts, ambient sound design, and natural pacing.</p>
+              <div class="card-meta">
+                <span class="card-tag">Documentary</span>
+                <span class="card-tool">DaVinci Resolve</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CREATIVE CARD 3 -->
+          <!-- UPDATE: Replace src, poster, title, desc, tags -->
+          <div class="card reveal">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/creative-03.mp4"
+                poster="thumbnails/creative-03.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="card-float-tag">Viral</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Viral Social Edit</h3>
+              <p class="card-desc">Hook in frame one — fast cuts, trending audio, captions timed to speech.</p>
+              <div class="card-meta">
+                <span class="card-tag">Social Media</span>
+                <span class="card-tool">CapCut · Premiere</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CREATIVE CARD 4 -->
+          <!-- UPDATE: Replace src, poster, title, desc, tags -->
+          <div class="card reveal">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/creative-04.mp4"
+                poster="thumbnails/creative-04.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="card-float-tag">Music Video</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Music Video Cut</h3>
+              <p class="card-desc">Beat-synced editing with colour-washed transitions and lyric overlays.</p>
+              <div class="card-meta">
+                <span class="card-tag">Music Video</span>
+                <span class="card-tool">Premiere Pro</span>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          ══════════════════════════════════════════
+          TO ADD A NEW CREATIVE EDIT CARD:
+          Copy the block below, paste before this comment,
+          then fill in your video src, poster, title, desc, tags.
+          ══════════════════════════════════════════
+
+          <div class="card reveal">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/YOUR-VIDEO.mp4"
+                poster="thumbnails/YOUR-POSTER.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="card-float-tag">YOUR STYLE LABEL</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">YOUR TITLE</h3>
+              <p class="card-desc">YOUR DESCRIPTION</p>
+              <div class="card-meta">
+                <span class="card-tag">YOUR TAG</span>
+                <span class="card-tool">YOUR TOOL</span>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div><!-- /creative-grid -->
+      </div><!-- /tab-creative -->
+
+
+      <!-- ===========================================================
+        TAB 2: MOTION & ANIMATION
+        What goes here: Line animations, typography animations,
+        Google/UI-style motion, Netflix-style ad edits, logo animations,
+        particle effects — anything driven by After Effects or motion design.
+
+        HOW TO ADD A NEW CARD:
+        1. Export your animation as .mp4 to /videos
+        2. Add a poster frame to /thumbnails
+        3. Copy a card block, paste at the end of the motion-grid
+        4. Update: src, poster, title, desc, card-tag, card-tool
+           and the motion-type chip (line / type / ui / ad / logo / etc.)
+      =========================================================== -->
+      <div class="tab-content" id="tab-motion">
+        <div class="motion-grid">
+
+          <!-- MOTION CARD 1 — Line Animation -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="line">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/motion-line-01.mp4"
+                poster="thumbnails/motion-line-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <!-- Motion type chip — shown top-left of card media -->
+              <span class="motion-chip motion-chip--line">Line Animation</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Stroke Path Reveal</h3>
+              <p class="card-desc">Organic line-drawing animation — paths drawn on screen in sync with music or narration.</p>
+              <div class="card-meta">
+                <span class="card-tag">Line Art</span>
+                <span class="card-tool">After Effects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOTION CARD 2 — Typography Animation -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="type">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/motion-type-01.mp4"
+                poster="thumbnails/motion-type-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--type">Typography</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Kinetic Title Sequence</h3>
+              <p class="card-desc">Word-by-word kinetic reveal — characters spring, slide, and land in rhythm with audio.</p>
+              <div class="card-meta">
+                <span class="card-tag">Kinetic Type</span>
+                <span class="card-tool">After Effects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOTION CARD 3 — UI / Google-style Animation -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="ui">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/google 3d edit.mov"
+                poster="thumbnails/motion-ui-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--ui">UI Motion</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Google-Style Product Ad</h3>
+              <p class="card-desc">Clean material-motion principles — eased transitions, icon morphs, and data visualisations.</p>
+              <div class="card-meta">
+                <span class="card-tag">UI Animation</span>
+                <span class="card-tool">After Effects · Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOTION CARD 4 — Ad / Netflix-style Edit -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="ad">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/motion-ad-01.mp4"
+                poster="thumbnails/motion-ad-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--ad">Ad Edit</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Netflix-Style Promo Cut</h3>
+              <p class="card-desc">Dramatic tension pacing, cinematic colour, bold title cards — built for a 15-second ad slot.</p>
+              <div class="card-meta">
+                <span class="card-tag">Ad · Promo</span>
+                <span class="card-tool">Premiere · AE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOTION CARD 5 — Logo Animation -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="logo">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/motion-logo-01.mp4"
+                poster="thumbnails/motion-logo-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--logo">Logo Sting</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Animated Brand Sting</h3>
+              <p class="card-desc">3-second logo animation with particle burst and sound design — loops perfectly on any platform.</p>
+              <div class="card-meta">
+                <span class="card-tag">Logo Motion</span>
+                <span class="card-tool">After Effects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOTION CARD 6 — Typography / Lyric Video -->
+          <!-- UPDATE: src, poster, title, desc, tags -->
+          <div class="card motion-card reveal" data-motion-type="type">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/motion-lyric-01.mp4"
+                poster="thumbnails/motion-lyric-01.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--type">Lyric Video</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Animated Lyric Video</h3>
+              <p class="card-desc">Beat-mapped text animations with abstract backgrounds — every syllable timed to the track.</p>
+              <div class="card-meta">
+                <span class="card-tag">Lyric · Type</span>
+                <span class="card-tool">After Effects</span>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          ══════════════════════════════════════════
+          TO ADD A NEW MOTION CARD:
+          Copy the block below and paste before this comment.
+          Change data-motion-type to: line / type / ui / ad / logo
+          Change motion-chip class to match: motion-chip--line / --type / --ui / --ad / --logo
+          ══════════════════════════════════════════
+
+          <div class="card motion-card reveal" data-motion-type="STYLE">
+            <div class="card-media video-wrap">
+              <video
+                src="videos/YOUR-VIDEO.mp4"
+                poster="thumbnails/YOUR-POSTER.jpg"
+                loop muted playsinline
+                class="card-video"
+              ></video>
+              <div class="card-overlay">
+                <button class="play-btn" aria-label="Play video">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <span class="motion-chip motion-chip--STYLE">LABEL</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">YOUR TITLE</h3>
+              <p class="card-desc">YOUR DESCRIPTION</p>
+              <div class="card-meta">
+                <span class="card-tag">YOUR TAG</span>
+                <span class="card-tool">YOUR TOOL</span>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div><!-- /motion-grid -->
+
+        <!-- Motion type filter pills (auto-filters cards on click) -->
+        <div class="motion-filters reveal">
+          <span class="filter-label">Filter by type:</span>
+          <button class="motion-filter active" data-filter="all">All</button>
+          <button class="motion-filter" data-filter="line">Line</button>
+          <button class="motion-filter" data-filter="type">Typography</button>
+          <button class="motion-filter" data-filter="ui">UI Motion</button>
+          <button class="motion-filter" data-filter="ad">Ad Edits</button>
+          <button class="motion-filter" data-filter="logo">Logo</button>
+        </div>
+
+      </div><!-- /tab-motion -->
+
+
+      <!-- ===========================================================
+        TAB 3: THUMBNAIL DESIGNS
+        What goes here: Any thumbnail images you've designed.
+        These display in a masonry-style image grid.
+        Clicking any thumbnail opens a full-size lightbox preview.
+
+        HOW TO ADD A NEW THUMBNAIL:
+        1. Save your image (JPG or PNG) to /thumbnails
+        2. Copy any thumb-card block below, paste at the end of the grid
+        3. Update: src, alt, title, desc, card-tag, card-tool
+      =========================================================== -->
+      <div class="tab-content" id="tab-thumb">
+        <div class="thumb-grid">
+
+          <!-- THUMBNAIL CARD 1 — Tall card (good for portrait-ratio thumbnails) -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card thumb-card--tall reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-01.jpg"
+                alt="Tech channel thumbnail design"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Tech Review Thumbnail</h3>
+              <p class="card-desc">High-contrast split layout with bold product placement and punchy headline text.</p>
+              <div class="card-meta">
+                <span class="card-tag">Tech Niche</span>
+                <span class="card-tool">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL CARD 2 -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-02.jpg"
+                alt="Finance thumbnail design"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Finance &amp; Business</h3>
+              <p class="card-desc">Dark, authoritative palette with clear hierarchy — built for high-trust audiences.</p>
+              <div class="card-meta">
+                <span class="card-tag">Finance Niche</span>
+                <span class="card-tool">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL CARD 3 — Wide card (good for landscape thumbnails) -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card thumb-card--wide reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-03.jpg"
+                alt="Lifestyle vlog thumbnail"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Lifestyle Vlog Series</h3>
+              <p class="card-desc">Warm tones, candid energy, readable at 120px — consistent series branding across 10+ videos.</p>
+              <div class="card-meta">
+                <span class="card-tag">Lifestyle</span>
+                <span class="card-tool">Canva · Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL CARD 4 -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-04.jpg"
+                alt="Gaming thumbnail design"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Gaming Channel Thumbnail</h3>
+              <p class="card-desc">Neon-edged character cutout with dramatic lighting — maximum shelf presence in the gaming feed.</p>
+              <div class="card-meta">
+                <span class="card-tag">Gaming</span>
+                <span class="card-tool">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL CARD 5 -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-05.jpg"
+                alt="Minimalist podcast thumbnail"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Minimal Podcast Thumbnail</h3>
+              <p class="card-desc">Clean, typographic layout with a single-colour accent — works for audio and video podcasts.</p>
+              <div class="card-meta">
+                <span class="card-tag">Podcast</span>
+                <span class="card-tool">Photoshop · Illustrator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL CARD 6 -->
+          <!-- UPDATE: src, alt, title, desc, tags -->
+          <div class="card thumb-card reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/thumb-06.jpg"
+                alt="Motivational thumbnail design"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Motivational / Self-Help</h3>
+              <p class="card-desc">Aspirational visual language — gradient skies, bold serif type, emotion-first composition.</p>
+              <div class="card-meta">
+                <span class="card-tag">Self-Help</span>
+                <span class="card-tool">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          ══════════════════════════════════════════
+          TO ADD A NEW THUMBNAIL CARD:
+          Copy the block below and paste before this comment.
+          For a wider card add class "thumb-card--wide"
+          For a taller card add class "thumb-card--tall"
+          ══════════════════════════════════════════
+
+          <div class="card thumb-card reveal">
+            <div class="card-media thumb-media">
+              <img
+                src="thumbnails/YOUR-IMAGE.jpg"
+                alt="Brief description of the thumbnail"
+                class="card-img"
+                loading="lazy"
+              />
+              <div class="card-overlay thumb-overlay">
+                <div class="thumb-preview-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  <span>View Full Size</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">YOUR TITLE</h3>
+              <p class="card-desc">YOUR DESCRIPTION</p>
+              <div class="card-meta">
+                <span class="card-tag">YOUR TAG</span>
+                <span class="card-tool">YOUR TOOL</span>
+              </div>
+            </div>
+          </div>
+          -->
+
+        </div><!-- /thumb-grid -->
+      </div><!-- /tab-thumb -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECTION 3: SERVICES
+    UPDATE: Service titles and descriptions below
+  ============================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-title">Services built for<br /><em>creators</em></h2>
+      </div>
+      <div class="services-grid">
+
+        <!-- SERVICE 1 — UPDATE title and description -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+          </div>
+          <h3>Reel Editing</h3>
+          <p>Scroll-stopping short-form edits for Instagram, TikTok & YouTube Shorts — hook-first structure, trending cuts.</p>
+          <div class="service-num">01</div>
+        </div>
+
+        <!-- SERVICE 2 — UPDATE title and description -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+          </div>
+          <h3>YouTube Video Editing</h3>
+          <p>Engaging long-form edits with smart pacing, B-roll, captions, and colour grading to maximise watch time.</p>
+          <div class="service-num">02</div>
+        </div>
+
+        <!-- SERVICE 3 — UPDATE title and description -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Motion Graphics</h3>
+          <p>Custom animated intros, lower thirds, kinetic text, and brand animations using After Effects & Premiere.</p>
+          <div class="service-num">03</div>
+        </div>
+
+        <!-- SERVICE 4 — UPDATE title and description -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <h3>Thumbnail Design</h3>
+          <p>Data-driven thumbnail design that boosts CTR — bold, readable at small size, and on-brand for your niche.</p>
+          <div class="service-num">04</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECTION 4: WHY CHOOSE ME
+    UPDATE: Reasons/values below
+  ============================================================ -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left reveal">
+          <span class="section-label">Why Me?</span>
+          <h2 class="section-title">Editing that<br /><em>gets results</em></h2>
+          <p class="why-body">
+            <!-- UPDATE: Your value proposition paragraph -->
+            Every project I take on is treated like it's my own channel — I think about the algorithm, the audience, and the hook before I make a single cut.
+          </p>
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+        </div>
+        <div class="why-right">
+          <!-- WHY ITEM 1 — UPDATE -->
+          <div class="why-item reveal">
+            <div class="why-icon">🎯</div>
+            <div>
+              <h4>Engagement-First Editing</h4>
+              <p>Every cut, transition, and caption is designed to keep viewers watching longer.</p>
+            </div>
+          </div>
+          <!-- WHY ITEM 2 — UPDATE -->
+          <div class="why-item reveal">
+            <div class="why-icon">📈</div>
+            <div>
+              <h4>Trend-Aware Approach</h4>
+              <p>I stay ahead of platform trends — what's converting on YouTube and Reels right now.</p>
+            </div>
+          </div>
+          <!-- WHY ITEM 3 — UPDATE -->
+          <div class="why-item reveal">
+            <div class="why-icon">⚡</div>
+            <div>
+              <h4>Fast Delivery</h4>
+              <p>Reliable turnaround times without compromising on quality. Rush orders available.</p>
+            </div>
+          </div>
+          <!-- WHY ITEM 4 — UPDATE -->
+          <div class="why-item reveal">
+            <div class="why-icon">✨</div>
+            <div>
+              <h4>Clean, Professional Output</h4>
+              <p>Studio-quality edits — proper color, audio, and file formats ready to upload.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECTION 5: ABOUT ME
+    UPDATE: Photo and bio paragraph below
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-img-wrap reveal">
+          <!-- REPLACE: Put your photo in /assets and update src -->
+          <div class="about-img-placeholder">
+            <span>Your Photo Here</span>
+            <!-- WHEN READY: replace the div above with:
+              <img src="assets/profile.jpg" alt="Rishita Sriya" class="about-img" />
+            -->
+          </div>
+          <div class="about-badge">
+            <span>2+ yrs</span>
+            <small>experience</small>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Hey, I'm<br /><em>Rishita Sriya</em></h2>
+          <!-- UPDATE: Your bio -->
+          <p>
+            I'm a video editor and motion designer passionate about creating content that connects. Whether it's a 15-second reel or a 20-minute YouTube video, I bring the same attention to story, rhythm, and energy to every project.
+          </p>
+          <p>
+            I work with creators, brands, and businesses who want their content to stand out — not just look good, but actually perform. My workflow is clean, my communication is clear, and I always deliver on time.
+          </p>
+          <!-- UPDATE: Your tools/skills tags -->
+          <div class="skills-tags">
+            <span>Premiere Pro</span>
+            <span>After Effects</span>
+            <span>DaVinci Resolve</span>
+            <span>Photoshop</span>
+            <span>CapCut</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    SECTION 6: CONTACT
+    UPDATE: WhatsApp number, Instagram handle, and email below
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-header reveal">
+          <span class="section-label">Let's Work Together</span>
+          <!-- UPDATE: Headline -->
+          <h2 class="section-title">Ready to make<br /><em>great content?</em></h2>
+          <!-- UPDATE: Contact subline -->
+          <p class="contact-sub">Drop me a message on any platform — I usually respond within a few hours.</p>
+        </div>
+        <div class="contact-buttons reveal">
+
+          <!-- UPDATE: Replace +91XXXXXXXXXX with your WhatsApp number -->
+          <a
+            href="https://wa.me/91XXXXXXXXXX?text=Hi%20Rishita!%20I'd%20love%20to%20work%20with%20you."
+            target="_blank"
+            class="contact-btn whatsapp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+
+          <!-- UPDATE: Replace 'yourhandle' with your Instagram username -->
+          <a
+            href="https://instagram.com/yourhandle"
+            target="_blank"
+            class="contact-btn instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+
+          <!-- UPDATE: Replace with your email address -->
+          <a
+            href="mailto:rishita@example.com"
+            class="contact-btn email"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Me
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    FOOTER
+    UPDATE: Name and social links
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <!-- UPDATE: Your name -->
+        <p class="footer-name">Rishita Sriya</p>
+        <p class="footer-copy">© 2025 · All rights reserved · Made with ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
